@@ -1,0 +1,5 @@
+This program uses java, and the IDE outputs a .jar file. To run the jar file, do "java -jar mp3.jar 0" on the machines to run the program.
+When you are in the program, you can initialize the introducer by input "initiate", and then "join" on other machines to join the membership list or "leav" to leave it.
+The filesystem commands are: "put localfilename sdfsfilename", " get sdfsfilename localfilename", "delete sdfsfilename", to upload, download or delete from the filesystem. Also we use "ls sdsfilename" to get all the files stored on the filesystem, or "store" to get all the files stored on one machine. In order to get latest versions of a file, input "get-versions sdfsfilename numversions
+localfilename".
+You can generate scripts with script.py by running "python script.py filename num", with num being the number of MBs of the file to generate.

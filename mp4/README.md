@@ -1,0 +1,5 @@
+This program uses java, and the IDE outputs a .jar file. To run the jar file, do "java -jar mp4.jar x", where x = 0 for master, x = 1 for client and x = 2 for workers.
+When you are in the program, you can initialize the introducer by input "initiate", and then "join" on other machines to join the membership list or "leav" to leave it.
+The filesystem commands are: "put localfilename sdfsfilename", " get sdfsfilename localfilename", "delete sdfsfilename", to upload, download or delete from the filesystem. Also we use "ls sdsfilename" to get all the files stored on the filesystem, or "store" to get all the files stored on one machine. In order to get latest versions of a file, input "get-versions sdfsfilename numversions
+localfilename"
+To submit a Crane job to the cluster, first all the files should reside in a folder with the same name of the name of the job. In client, type in "job jobname" to submit a job. After submitting, wait until "Job finished" pops on the screen and the result should reside on SDFS already. Use a "get" operation to download the result to local fs.
